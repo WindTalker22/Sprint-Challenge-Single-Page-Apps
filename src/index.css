@@ -25,15 +25,48 @@ main {
 }
 
 .grid-view div.card.ui {
-  margin: 1.25rem;
+  /* margin: 1.25rem; */
 }
-/*
+
 .main-img {
   display: block;
   border-radius: 100%;
   margin: 0 auto;
-} */
+}
 
 header h1 {
   text-align: center;
+}
+
+div .nav-link {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+  margin: 0;
+}
+
+.card-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+.card {
+  margin-bottom: 5%;
+  width: 40%;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.char-car {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 5%;
 }
