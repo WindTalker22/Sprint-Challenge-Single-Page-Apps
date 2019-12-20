@@ -1,16 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react"
+import CharacterCard from "./CharacterCard"
 
-export default function CharacterList() {
-  // TODO: Add useState to track data from useEffect
-
-  useEffect(() => {
-    // TODO: Add API Request here - must run in `useEffect`
-    //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
-  }, []);
-
+const CharacterList = props => {
   return (
-    <section className="character-list">
-      <h2>TODO: `array.map()` over your state here!</h2>
-    </section>
-  );
+    <div className="char-car">
+      {props.character.map(item => {
+        return <CharacterCard item={item} />
+      })}
+    </div>
+  )
 }
+
+export default CharacterList
